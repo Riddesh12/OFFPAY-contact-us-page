@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - OffPay</title>
+  <style>
+    /* General Body Style */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1e6ff; /* Light purple background */
+      color: #4a006e; /* Dark purple text color */
+    }
+    
+    /* Container for Content */
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #6a1b9a; /* Purple shade */
+    }
+
+    .info {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #4a006e; /* Dark purple */
+    }
+
+    .info span {
+      font-weight: bold;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #6a1b9a; /* Purple */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #9c4dcc; /* Lighter purple on hover */
+    }
+
+    .links-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .link-button {
+      display: inline-block;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .link-button:hover {
+      background-color: #9c4dcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="info">
+      <p>Email: <span id="email">support@offpay.com</span></p>
+      <p>Phone: <span id="phone">+91-1234567890</span></p>
+    </div>
+
+    <div class="button-container">
+      <button id="contactButton">Get in Touch</button>
+    </div>
+
+    <div class="links-container">
+      <a href="https://github.com/Riddesh12/OFFPAY" class="link-button" target="_blank">Visit GitHub Repository</a>
+      <a href="https://github.com/Riddesh12/OFFPAY/releases" class="link-button" target="_blank">Download the App</a>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for dynamic updates (if needed)
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+
+    // Example of dynamic updates (Optional)
+    email.textContent = "marwadis1234@gmail.com"; // Updating email
+    phone.textContent = "+91-9876543210"; // Updating phone number
+
+    // Optional: Handle the "Get in Touch" button click
+    const contactButton = document.getElementById("contactButton");
+    contactButton.addEventListener("click", function() {
+      alert("You can contact us at the provided email or phone number.");
+    });
+  </script>
+</body>
+</html>
